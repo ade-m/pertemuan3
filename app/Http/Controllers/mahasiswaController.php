@@ -21,6 +21,7 @@ class mahasiswaController extends Controller
     {
         return view('listMahasiswa')->with('mhs',$this->mhs);
     }
+    //test
 
     /**
      * Show the form for creating a new resource.
