@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\mahasiswaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,13 +18,14 @@ Route::get('/', function () {
     return view('welcome',['nama'=>'Budiono','jurusan'=>'Sistem Informasi ']);
 });
 
-
-Route::get('/Mahasiswa', function () {
-    $mhs =[
-        1=> ['nama'=>'Budiono','jurusan'=>'Sistem Informasi '],
-        2=> ['nama'=>'Susanti','jurusan'=>'Sistem Informasi '],
-        3=> ['nama'=>'Stevan','jurusan'=>'Informatika']
-    ];
-    return view('listMahasiswa')->with('mhs',$mhs);
-});
+Route::get('/Mahasiswa', [mahasiswaController::class, 'index']);
+ 
+// Route::get('/Mahasiswa', function () {
+//     $mhs =[
+//         1=> ['nama'=>'Budiono','jurusan'=>'Sistem Informasi '],
+//         2=> ['nama'=>'Susanti','jurusan'=>'Sistem Informasi '],
+//         3=> ['nama'=>'Stevan','jurusan'=>'Informatika']
+//     ];
+//     return view('listMahasiswa')->with('mhs',$mhs);
+// });
 
