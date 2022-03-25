@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome',['nama'=>'Budiono']);
+    return view('welcome',['nama'=>'Budiono','jurusan'=>'Sistem Informasi ']);
 });
 
 
 Route::get('/Mahasiswa', function () {
-    return view('welcome',['nama'=>'Mahasiswa Budiono ']);
+    return view('welcome',['nama'=>'Mahasiswa Budiono ','jurusan'=>'Sistem Informasi ']);
 });
