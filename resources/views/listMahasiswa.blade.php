@@ -3,7 +3,7 @@
 @section('title', 'List Profil Mahasiswa')
 
 @section('content')
-  <table >
+  <table  class="table table-bordered">
     <tr >
         <th>Nama</th>
         <th>Jurusan</th>
