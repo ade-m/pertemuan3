@@ -1,4 +1,4 @@
-@extends('template.mastertemplate')
+@extends('template.adminLTE')
 
 @section('title', 'Selamat Datang')
 
