@@ -165,7 +165,7 @@
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
       <img src='{{ asset("adminLTE/dist/img/AdminLTELogo.png") }}' alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <span class="brand-text font-weight-light">Sistem Informasi</span>
     </a>
 
     <!-- Sidebar -->
@@ -214,13 +214,11 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Dashboard v2</h1>
+            <h1 class="m-0">@yield('title-body')</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v2</li>
-            </ol>
+              @yield('breadcrumb')
+            
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -230,7 +228,13 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-            @yield('content')
+          <div class="card">
+              <div class="card-title"></div>
+              <div class="card-body">
+                @yield('content')
+              </div>
+            
+          </div>
 
        </div><!--/. container-fluid -->
     </section>
@@ -245,13 +249,7 @@
   <!-- /.control-sidebar -->
 
   <!-- Main Footer -->
-  <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
-    All rights reserved.
-    <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 3.2.0
-    </div>
-  </footer>
+  @include('layout.footer')
 </div>
 <!-- ./wrapper -->
 
