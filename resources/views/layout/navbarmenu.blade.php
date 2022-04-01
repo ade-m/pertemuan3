@@ -8,7 +8,5 @@
     <li class="nav-item">
       <a class="nav-link" href="/Mahasiswa/create">Tambah Mahasiswa</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link disabled">Disabled</a>
-    </li>
+
   </ul>
